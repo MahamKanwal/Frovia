@@ -1,147 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frovia</title>
-    <link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="images/froviaIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/froviaIcon.png"
+      type="image/x-icon"
+    />
     <!-- Tailwind via CDN  -->
-  <script src="https://cdn.tailwindcss.com"></script>
-   <!-- font-awesome via cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome via cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="text-white bg-black">
     <!-- Navbar -->
-     <nav class="relative bg-black after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-     <div class="flex items-center justify-between w-full">
+    <nav
+      class="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+    >
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="flex items-center justify-between w-full">
+            <!-- Left: Logo -->
+            <div class="flex shrink-0 items-center pl-5">
+              <img
+                src="images/frovia.png"
+                alt="Your Company"
+                class="h-8 w-auto"
+              />
+            </div>
 
-  <!-- Left: Logo -->
-  <div class="flex shrink-0 items-center pl-5">
-    <img src="images/frovia.png" 
-         alt="Your Company" class="h-8 w-auto" />
-  </div>
-
-  <!-- Center: Navigation -->
-  <div class="hidden sm:flex flex-1 justify-center">
-    <div class="flex space-x-4">
-      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800">Home</a>
-      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800">Categories</a>
-      <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800">Search</a>
-    </div>
-  </div>
-</div>
-<!-- Right Icons -->
-<div class="flex space-x-4 pl-5">
-    <!-- Bar Icon -->
-      <div class="text-white">
-        <i class="fa-solid fa-bars"></i>
-        </div>  
-        <!-- User Icon -->
-    <div class="text-white">
-          <i class="fa-solid fa-circle-user"></i>
-    </div>
-
+            <!-- Center: Navigation -->
+            <div class="hidden sm:flex flex-1 justify-center">
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800"
+                  >Categories</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800"
+                  >Search</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Right Icons -->
+          <div class="flex space-x-4 pl-5">
+            <!-- Bar Icon -->
+            <div class="text-white">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- User Icon -->
+            <div class="text-white">
+              <i class="fa-solid fa-circle-user"></i>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </div>
-  </div>
-     
-  <!-- Mobile Menu -->
-  <el-disclosure id="mobile-menu" hidden class="block lg:hidden">
-    <div class="space-y-1 px-2 pt-2 pb-3 text-center">
-      <a href="#" aria-current="page" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-amber-800">Home</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium hover:text-amber-800 text-white">Categories</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-amber-800">Search</a>
-    </div>
-  </el-disclosure>
+      <!-- Mobile Menu -->
+      <el-disclosure id="mobile-menu" hidden class="block md:hidden">
+        <div class="space-y-1 px-2 pt-2 pb-3 text-center">
+          <a
+            href="#"
+            aria-current="page"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-amber-800"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium hover:text-amber-800 text-white"
+            >Categories</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-amber-800"
+            >Search</a
+          >
+        </div>
+      </el-disclosure>
+    </nav>
+    <!-- Navbar -->
 
-   <!-- Social Login Buttons In Mobile Menu -->
-        <div class="flex flex-col items-center space-y-3 mt-0 block lg:hidden">
-    <button class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100">
-      <img src="images/google.png" alt="Google" class="h-5 w-5 mr-2">
-      <span class="font-semibold text-sm">
-        CONTINUE WITH GOOGLE
-      </span>
-    </button>
+    <!-- Hero Section -->
 
-    <button class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100">
-      <img src="images/facebook.png" alt="Facebook" class="h-5 w-5 mr-2">
-       <span class="font-semibold text-sm">
-        CONTINUE WITH FACEBOOK
-      </span>
-    </button>
-
-    <button class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100">
-      <img src="images/apple.png" alt="Apple" class="h-5 w-5 mr-2">
-       <span class="font-semibold text-sm">
-        CONTINUE WITH APPLE
-      </span>
-    </button>
-  </div> 
-
-  </nav>
- <!-- Navbar -->
-
-  <!-- Hero Section -->
-  
-<div class="bg-black text-white relative">
-
-    <!-- Background Image -->
-    <div class="absolute inset-0">
-      <img src="images/wedding-bg.jpg" alt="Wedding" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-black/50"></div>
-    </div>
-        <!-- Left Side -->
-    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-16 flex flex-col lg:flex-row items-center justify-between">
-      <div class="max-w-xl">
-        <h1 class="text-4xl md:text-5xl font-bold">
-          The Wedding <br> Party
-        </h1>
-        <p class="mt-4 text-gray-300 text-lg">
-          A romantic comedy about a couple <br>
-          determined to have the perfect wedding <br>
-          despite various obstacles
-        </p>
-        <button class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition">
-          WATCH NOW
-        </button>
+    <div class="relative">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img
+          src="images/wedding-bg.jpg"
+          alt="Wedding"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
       </div>
+      <!-- Left Side -->
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-16 flex flex-col lg:flex-row items-center justify-between"
+      >
+        <div class="max-w-xl">
+          <h1 class="text-4xl md:text-5xl font-bold">
+            The Wedding <br />
+            Party
+          </h1>
+          <p class="mt-4 text-gray-300 text-lg">
+            A romantic comedy about a couple <br />
+            determined to have the perfect wedding <br />
+            despite various obstacles
+          </p>
+          <button
+            class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition"
+          >
+            WATCH NOW
+          </button>
+        </div>
 
-      <!-- Social Login Buttons-->
-     <div class="flex flex-col items-end space-y-3 mb-40 mt-0 hidden lg:block">
-    <button class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100">
-      <img src="images/google.png" alt="Google" class="h-5 w-5 mr-2">
-      <span class="font-semibold text-sm">
-        CONTINUE WITH GOOGLE
-      </span>
-    </button>
+        <!-- Social Login Buttons-->
+        <div
+          class="flex flex-col items-end space-y-3 mb-40 mt-0 hidden lg:block"
+        >
+          <button
+            class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100"
+          >
+            <img src="images/google.png" alt="Google" class="h-5 w-5 mr-2" />
+            <span class="font-semibold text-sm"> CONTINUE WITH GOOGLE </span>
+          </button>
 
-    <button class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100">
-      <img src="images/facebook.png" alt="Facebook" class="h-5 w-5 mr-2">
-       <span class="font-semibold text-sm">
-        CONTINUE WITH FACEBOOK
-      </span>
-    </button>
+          <button
+            class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100"
+          >
+            <img
+              src="images/facebook.png"
+              alt="Facebook"
+              class="h-5 w-5 mr-2"
+            />
+            <span class="font-semibold text-sm"> CONTINUE WITH FACEBOOK </span>
+          </button>
 
-    <button class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100">
-      <img src="images/apple.png" alt="Apple" class="h-5 w-5 mr-2">
-       <span class="font-semibold text-sm">
-        CONTINUE WITH APPLE
-      </span>
-    </button>
-  </div> 
-
+          <button
+            class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100"
+          >
+            <img src="images/apple.png" alt="Apple" class="h-5 w-5 mr-2" />
+            <span class="font-semibold text-sm"> CONTINUE WITH APPLE </span>
+          </button>
+        </div>
+      </div>
     </div>
+    <!-- Hero Section -->
 
-</div>
+    <!-- New Releases Section -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <!-- Heading -->
+      <h2 class="text-2xl font-bold mb-6">New Releases</h2>
 
-<!-- Hero Section -->
+      <!-- Grid -->
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-4"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/queenOfGlory.png"
+            alt="Queen of Glory"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">Queen</h3>
+            <p class="text-sm text-gray-400">Drama</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/lionHeart.png"
+            alt="Lionheart"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">Lionheart</h3>
+            <p class="text-sm text-gray-400">Drama</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/levels.png"
+            alt="Levels"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">Levels</h3>
+            <p class="text-sm text-gray-400">Comedy</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/bloodSisters.png"
+            alt="Blood Sisters"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">Blood Sisters</h3>
+            <p class="text-sm text-gray-400 font-semibold">
+              Crazy Lovely, Cool
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="border-white bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/orange.png"
+            alt="Orange"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">Orange</h3>
+            <p class="text-xs text-gray-400">Thriller</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- New Releases Section  -->
+
+    <!-- Top Picks Section -->
+    <div class="max-w-7xl mx-auto px-4 py-4 pt-0">
+      <!-- Heading -->
+      <h2 class="text-2xl font-bold mb-6">Top Picks</h2>
+
+      <!-- Grid -->
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-4"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/lionHeartBoy.png"
+            alt="LionHeart Boy"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">Lion Heart</h3>
+            <p class="text-sm text-gray-400">Drama</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/theBoy.png"
+            alt="The Boy"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">The Boy</h3>
+            <p class="text-sm text-gray-400">Who Hamessed</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/crazylovely.png"
+            alt="crazy Lovely"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">Crazy,Lovely,Cool</h3>
+            <p class="text-sm text-gray-400">Romance</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/figTree.png"
+            alt="Fig Tree"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">The Fig Tree</h3>
+            <p class="text-sm text-gray-400 font-semibold">Drama</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="border-white bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="images/95.png"
+            alt="Orange"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-2">
+            <h3 class="text-md font-semibold">95</h3>
+            <p class="text-xs text-gray-400">Comedy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Picks Section -->
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
