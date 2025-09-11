@@ -5,8 +5,19 @@
 // findWord(["on","of","oh"],"off");
 
 // const palindromeWords = (word) => {
-// let words = word.reverse();
-// console.log(words);
+// let ulta = word.split("").reverse().join("");
+// console.log(ulta == word);
 // }
-// let userInput = prompt("Enter a palindrome word")
-// console.log(palindromeWords(userInput));
+// palindromeWords("mam");
+
+const menu = document.getElementById("menu");
+const barBtn = document.getElementById("barBtn");
+
+const toggleMenu = () => {
+    menu.classList.toggle("h-0");
+    menu.classList.toggle("h-[110px]");
+};
+
+
+
+barBtn.addEventListener("click",toggleMenu);
