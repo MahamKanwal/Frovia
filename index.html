@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frovia</title>
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
       href="images/froviaIcon.png"
@@ -18,484 +18,121 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-<!-- google fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
+  <body class="bg-black text-white">
+    <!-- Header   -->
+    <header class="flex justify-between py-5 px-[10vw] max-sm:hidden">
+      <!-- Logo -->
+      <a href=""><span class="converted text-orange-400 font-bold text-2xl">V</span>FROVIA</a>
+      <!-- Menu -->
+      <ul class="flex gap-10">
+        <li><a href="" class="text-orange-400">Home</a></li>
+        <li><a href="" class="hover:text-orange-400">Categories</a></li>
+        <li><a href="" class="hover:text-orange-400">Search</a></li>
+      </ul>
 
-<body class="bg-black text-white">  
-<!-- Header   -->
-<header class="flex justify-between py-5 px-[10vw] max-sm:hidden">
-<!-- Logo -->
- <a href=""><span class="converted">V</span>FROVIA</a> 
- <!-- Menu -->
-<ul class="flex gap-10">
-<li><a href="" class="text-orange-400">Home</a></li>
-<li><a href="" class="hover:text-orange-400">Categories</a></li>
-<li><a href="" class="hover:text-orange-400">Search</a></li>
-</ul>
+      <div class="">
+        <!-- Bar Icon -->
+        <button class="">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- User Icon -->
+        <button class="">
+          <i class="fa-solid fa-circle-user"></i>
+        </button>
+      </div>
+    </header>
 
- <div class="">
-            <!-- Bar Icon -->
-            <button class="">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-            <!-- User Icon -->
-            <button class="">
-              <i class="fa-solid fa-circle-user"></i>
-            </button>
-          </div>
-</header>
+    <!-- Small devices header -->
+    <header class="flex justify-between flex-wrap py-5 px-[10vw] sm:hidden">
+      <!-- Logo -->
+      <a href=""><span class="converted text-orange-400 font-bold text-2xl">V</span>FROVIA</a>
 
-<!-- Small devices header -->
-<header class="flex justify-between flex-wrap py-5 px-[10vw] sm:hidden">
-<!-- Logo -->
- <a href=""><span class="converted">V</span>FROVIA</a> 
- 
- 
- <div class="">
-            <!-- Bar Icon -->
-            <button id="barBtn">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-            <!-- User Icon -->
-            <button class="">
-              <i class="fa-solid fa-circle-user"></i>
-            </button>
-          </div>
- 
- 
- 
- <!-- Menu -->
-<ul class="flex flex-col w-full gap-4 mt-5 h-0 duration-300 overflow-hidden" id="menu">
-<li><a href="" class="text-orange-400">Home</a></li>
-<li><a href="" class="hover:text-orange-400">Categories</a></li>
-<li><a href="" class="hover:text-orange-400">Search</a></li>
-</ul>
-</header>
+      <div class="">
+        <!-- Bar Icon -->
+        <button id="barBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- User Icon -->
+        <button class="">
+          <i class="fa-solid fa-circle-user"></i>
+        </button>
+      </div>
 
-<div class="hero-section flex items-center px-[10vw] mx-10">
-<div class="max-w-md space-y-5">
-  <h2 class="font-bold text-[4vw] leading-none">The Wedding
-     Party</h2>
-  <p class="text-gray-100 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus impedit fugiat pariatur nostrum tempora molestias magni maiores, ullam distinctio?</p>
-  <button class="rounded-md bg-orange-600 px-5 py-2">WATCH NOW</button>
+      <!-- Menu -->
+      <ul
+        class="flex flex-col w-full gap-4 mt-5 h-0 duration-300 overflow-hidden"
+        id="menu"
+      >
+        <li><a href="" class="text-orange-400">Home</a></li>
+        <li><a href="" class="hover:text-orange-400">Categories</a></li>
+        <li><a href="" class="hover:text-orange-400">Search</a></li>
+      </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section flex items-center px-[10vw] mx-10">
+      <div class="max-w-md space-y-5">
+        <h2 class="font-bold text-[4vw] leading-none">The Wedding Party</h2>
+        <p class="text-gray-100 text-sm">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          natus impedit fugiat pariatur nostrum tempora molestias magni maiores,
+          ullam distinctio?
+        </p>
+        <button class="rounded-md bg-orange-600 px-5 py-2">WATCH NOW</button>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+     <!-- New Releases -->
+     <div class="cards-section max-w-7xl mx-auto px-4 py-5">
+      <h2 class="font-bold text-2xl mb-5">New Releases</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="bg-gray-900 rounded-lg overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1670529776180-60e4132ab90c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZyUyMHZlbnVlfGVufDB8fDB8fHww" alt="" class="w-full h-60 object-cover">
+  <div class="p-2">
+    <h3 class="text-md font-semibold">Queen</h3>
+    <p class="text-sm text-gray-500">Drama</p>
+  </div>
 </div>
+<!-- Card 2 -->
+<div class="bg-gray-900 rounded-lg overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1571268373914-e888c6dafeff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZyUyMHZlbnVlfGVufDB8fDB8fHww" alt="" class="w-full h-60 object-cover">
+  <div class="p-2">
+    <h3 class="text-md font-semibold">Lionheart</h3>
+    <p class="text-sm text-gray-500">Drama</p>
+  </div>
 </div>
+<!-- Card 3 -->
+ <div class="bg-gray-900 rounded-lg overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VkZGluZyUyMHZlbnVlfGVufDB8fDB8fHww" alt="" class="w-full h-60 object-cover">
+  <div class="p-2">
+    <h3 class="text-md font-semibold">Levels</h3>
+    <p class="text-sm text-gray-500">Drama</p>
+  </div>
+</div>
+<!-- Card 4 -->
+ <div class="bg-gray-900 rounded-lg overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1505944357431-27579db47558?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlZGRpbmclMjB2ZW51ZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-60 object-cover">
+  <div class="p-2">
+    <h3 class="text-md font-semibold">Crazy</h3>
+    <p class="text-sm text-gray-500">Drama</p>
+  </div>
+</div>
+      </div>
+     </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
-
-
-
-<!-- <body class="text-white bg-black">  -->
-    <!-- Navbar -->
-    <!-- <nav
-      class="after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
-    >
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-          <div class="flex items-center justify-between w-full"> -->
-            <!-- Left: Logo -->
-            <!-- <div class="flex shrink-0 items-center pl-5">
-              <img
-                src="images/frovia.png"
-                alt="Your Company"
-                class="h-8 w-auto"
-              />
-            </div> -->
-
-            <!-- Center: Navigation -->
-            <!-- <div class="hidden sm:flex flex-1 justify-center">
-              <div class="flex space-x-4">
-                <a
-                  href="#"
-                  class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800"
-                  >Home</a
-                >
-                <a
-                  href="#"
-                  class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800"
-                  >Categories</a
-                >
-                <a
-                  href="#"
-                  class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-amber-800"
-                  >Search</a
-                >
-              </div>
-            </div>
-          </div> -->
-          <!-- Right Icons -->
-             <!-- <div class="flex space-x-4 pl-5"> -->
-            <!-- Bar Icon -->
-            <!-- <div class="text-white">
-              <i class="fa-solid fa-bars"></i>
-            </div> -->
-            <!-- User Icon -->
-            <!-- <div class="text-white">
-              <i class="fa-solid fa-circle-user"></i>
-            </div>
-          </div>
-         
-        </div>
-      </div> -->
-
-      <!-- Mobile Menu -->
-      <!-- <el-disclosure id="mobile-menu" hidden class="block md:hidden">
-        <div class="space-y-1 px-2 pt-2 pb-3 text-center">
-          <a
-            href="#"
-            aria-current="page"
-            class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-amber-800"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="block rounded-md px-3 py-2 text-base font-medium hover:text-amber-800 text-white"
-            >Categories</a
-          >
-          <a
-            href="#"
-            class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-amber-800"
-          >
-            >Search</a
-          >
-        </div>
-      </el-disclosure>
-    </nav> -->
-    <!-- Navbar -->
-
-    <!-- Hero Section -->
-    <!-- <div class="relative"> -->
-      <!-- Background Image -->
-      <!-- <div class="absolute inset-0">
-        <img
-          src="images/wedding-bg.jpg"
-          alt="Wedding"
-          class="w-full h-full object-cover"
-        />
-        <div class="absolute inset-0 bg-black/50"></div>
-      </div> -->
- <!-- Left Side -->
-      <!-- <div
-        class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-16 flex flex-col lg:flex-row items-center justify-between"
-      >
-        <div class="max-w-xl">
-          <h1 class="text-4xl md:text-5xl font-bold">
-            The Wedding <br />
-            Party
-          </h1>
-          <p class="mt-4 text-gray-300 text-lg">
-            A romantic comedy about a couple <br />
-            determined to have the perfect wedding <br />
-            despite various obstacles
-          </p>
-          <button
-            class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition"
-          >
-            WATCH NOW
-          </button>
-        </div> -->
-
-        <!-- Social Login Buttons-->
-        <!-- <div
-          class="flex flex-col items-end space-y-3 mb-40 mt-0 hidden lg:block"
-        >
-          <button
-            class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100"
-          >
-            <img src="images/google.png" alt="Google" class="h-5 w-5 mr-2" />
-            <span class="font-semibold text-sm"> CONTINUE WITH GOOGLE </span>
-          </button>
-
-          <button
-            class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100"
-          >
-            <img
-              src="images/facebook.png"
-              alt="Facebook"
-              class="h-5 w-5 mr-2"
-            />
-            <span class="font-semibold text-sm"> CONTINUE WITH FACEBOOK </span>
-          </button>
-
-          <button
-            class="flex items-center justify-center w-72 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-gray-700 hover:bg-gray-100"
-          >
-            <img src="images/apple.png" alt="Apple" class="h-5 w-5 mr-2" />
-            <span class="font-semibold text-sm"> CONTINUE WITH APPLE </span>
-          </button>
-        </div>
-      </div>
-    </div> -->
-    <!-- Hero Section -->
-
-    <!-- New Releases Section -->
-    <!-- <div class="max-w-7xl mx-auto px-4 py-8"> -->
-      <!-- Heading -->
-      <!-- <h2 class="text-2xl font-bold mb-6">New Releases</h2> -->
-      <!-- Grid -->
-      <!-- <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-4"
-      > -->
-        <!-- Card 1 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/queenOfGlory.png"
-            alt="Queen of Glory"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Queen</h3>
-            <p class="text-sm text-gray-400">Drama</p>
-          </div>
-        </div> -->
-
-        <!-- Card 2 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/lionHeart.png"
-            alt="Lionheart"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Lionheart</h3>
-            <p class="text-sm text-gray-400">Drama</p>
-          </div>
-        </div> -->
-
-        <!-- Card 3 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/levels.png"
-            alt="Levels"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Levels</h3>
-            <p class="text-sm text-gray-400">Comedy</p>
-          </div>
-        </div> -->
-
-        <!-- Card 4 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/bloodSisters.png"
-            alt="Blood Sisters"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Blood Sisters</h3>
-            <p class="text-sm text-gray-400 font-semibold">
-              Crazy Lovely, Cool
-            </p>
-          </div>
-        </div> -->
-
-        <!-- Card 5 -->
-        <!-- <div
-          class="border-white bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/orange.png"
-            alt="Orange"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Orange</h3>
-            <p class="text-xs text-gray-400">Thriller</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- New Releases Section  -->
-
-    <!-- Top Picks Section -->
-    <!-- <div class="max-w-7xl mx-auto px-4 py-4 pt-0"> -->
-      <!-- Heading -->
-      <!-- <h2 class="text-2xl font-bold mb-6">Top Picks</h2> -->
-
-      <!-- Grid -->
-      <!-- <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-4"
-      > -->
-        <!-- Card 1 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/lionHeartBoy.png"
-            alt="LionHeart Boy"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Lion Heart</h3>
-            <p class="text-sm text-gray-400">Drama</p>
-          </div>
-        </div> -->
-
-        <!-- Card 2 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/theBoy.png"
-            alt="The Boy"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">The Boy</h3>
-            <p class="text-sm text-gray-400">Who Hamessed</p>
-          </div>
-        </div> -->
-
-        <!-- Card 3 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/crazylovely.png"
-            alt="crazy Lovely"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Crazy,Lovely,Cool</h3>
-            <p class="text-sm text-gray-400">Romance</p>
-          </div>
-        </div> -->
-
-        <!-- Card 4 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/figTree.png"
-            alt="Fig Tree"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">The Fig Tree</h3>
-            <p class="text-sm text-gray-400 font-semibold">Drama</p>
-          </div>
-        </div> -->
-
-        <!-- Card 5 -->
-        <!-- <div
-          class="border-white bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/95.png"
-            alt="Orange"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">95</h3>
-            <p class="text-xs text-gray-400">Comedy</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Top Picks Section -->
-
-    <!-- Comedy Section -->
-         <!-- <div class="max-w-7xl mx-auto px-4 py-4 pt-0"> -->
-      <!-- Heading -->
-      <!-- <h2 class="text-2xl font-bold mb-6">Comedy</h2> -->
-
-      <!-- Grid -->
-      <!-- <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-4"
-      > -->
-        <!-- Card 1 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/levels.png"
-            alt="Levels"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Comedy 1</h3>
-            <p class="text-sm text-gray-400">Drama</p>
-          </div>
-        </div> -->
-
-        <!-- Card 2 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/lionHeartBoy.png"
-            alt="LionHeart Boy"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Comedy 2</h3>
-            <p class="text-sm text-gray-400">Drama</p>
-          </div>
-        </div> -->
-
-        <!-- Card 3 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/bloodSisters.png"
-            alt="Blood Sisters"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Comedy 3</h3>
-            <p class="text-sm text-gray-400">Drama</p>
-          </div>
-        </div> -->
-
-        <!-- Card 4 -->
-        <!-- <div
-          class="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/95.png"
-            alt="95"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Comedy 4</h3>
-            <p class="text-sm text-gray-400 font-semibold">Drama</p>
-          </div>
-        </div> -->
-
-        <!-- Card 5 -->
-        <!-- <div
-          class="border-white bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="images/lionHeart.png"
-            alt="Lion Heart"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-2">
-            <h3 class="text-md font-semibold">Comedy 5</h3>
-            <p class="text-xs text-gray-400">Drama</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Comedy Section -->
-  <!-- <script src="app.js"></script>  -->
-<!-- </body>   -->
-
