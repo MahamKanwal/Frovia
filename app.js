@@ -10,6 +10,23 @@
 // }
 // palindromeWords("mam");
 
+// const createCounter = () => {
+//     let count = 0;
+//     const inner = () => {
+//         count++;
+//         console.log(count);
+//     }
+// return inner;
+// }
+// const counter = createCounter();
+// counter();
+// counter();
+// counter();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+
 const menu = document.getElementById("menu");
 const barBtn = document.getElementById("barBtn");
 
