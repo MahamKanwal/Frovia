@@ -23,18 +23,21 @@
 // console.log(counter());
 
 // const cart = [
-//   { product: "shoes", quantity: "2", price: 500}, 
-//   { product: "watches", quantity: "3", price: 1000},
-//   { product: "bag", quantity: "1", price: 2000}, 
-//   { product: "jeans", quantity: "1", price: 2500}, 
-//   { product: "shirts", quantity: "2", price: 3000}, 
-// ]
+//   { product: "shoes", quantity: 1 , price: 1000},
+//   { product: "watches", quantity: 1 , price: 1000},
+//   { product: "bag", quantity: 1 , price: 1000},
+//   { product: "jeans", quantity: 2 , price: 1000},
+//   { product: "shirts", quantity: 1 , price: 1000},
+// ];
+
+// let totalPrice = cart.reduce((a,c)=>a+(c.price*c.quantity),0);
+// console.log(totalPrice);
 
 // let totalPrice = 0;
 // for(let item of cart){
 //   totalPrice += item.quantity * item.price;
-// }
-// console.log(`Total Price: ${totalPrice}`);
+// };
+// console.log(totalPrice);
 
 // cart.push({
 //   product: "mobile",
@@ -46,8 +49,20 @@
 // cart.splice(1,2);
 // console.log(cart);
 
-// const myName = "Kanwal";
+// const nums = [1,2,3,4];
+// const sum = nums.reduce((a,c)=>a+c,0);
+// console.log(sum);
 
+// let myReverse = (word) => {
+//   let newWord = "";
+//  for (let i = word.length-1; i >= 0; i--){
+//    newWord+= word[i];
+//  }
+//  return newWord;
+// }
+// let ulta = myReverse("hellow");
+// let ulta2 = myReverse("enum");
+// console.log(ulta2);
 
 const modelForm = document.getElementById("modelForm");
 const loginBtn = document.getElementById("loginBtn");
@@ -84,4 +99,4 @@ modelForm.addEventListener("click", toggleFormModel);
 
 for (let btn of userFormBtn) {
   btn.addEventListener("click", toggleFormModel);
-};
+}
