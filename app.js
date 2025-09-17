@@ -22,6 +22,33 @@
 // console.log(counter());
 // console.log(counter());
 
+// const cart = [
+//   { product: "shoes", quantity: "2", price: 500}, 
+//   { product: "watches", quantity: "3", price: 1000},
+//   { product: "bag", quantity: "1", price: 2000}, 
+//   { product: "jeans", quantity: "3", price: 2500}, 
+//   { product: "shirts", quantity: "2", price: 3000}, 
+// ]
+
+// let totalPrice = 0;
+// for(let item of cart){
+//   totalPrice += item.quantity * item.price;
+// }
+// console.log(`Total Price: ${totalPrice}`);
+
+// cart.push({
+//   product: "mobile",
+//   quantity: 1,
+//   price: 2000
+// });
+// console.log(cart);
+
+// cart.splice(1,2);
+// console.log(cart);
+
+// let str = "Kanwal";
+
+
 const modelForm = document.getElementById("modelForm");
 const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
@@ -32,7 +59,7 @@ const barBtn = document.getElementById("barBtn");
 const userFormBtn = document.getElementsByClassName("userForm");
 const toggleFormModel = () => {
   modelForm.classList.toggle("hidden");
-document.body.classList.toggle("overflow-y-hidden");
+  document.body.classList.toggle("overflow-y-hidden");
 };
 
 const toggleMenu = () => {
@@ -57,4 +84,4 @@ modelForm.addEventListener("click", toggleFormModel);
 
 for (let btn of userFormBtn) {
   btn.addEventListener("click", toggleFormModel);
-}
+};
