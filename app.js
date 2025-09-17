@@ -26,7 +26,7 @@
 //   { product: "shoes", quantity: "2", price: 500}, 
 //   { product: "watches", quantity: "3", price: 1000},
 //   { product: "bag", quantity: "1", price: 2000}, 
-//   { product: "jeans", quantity: "3", price: 2500}, 
+//   { product: "jeans", quantity: "1", price: 2500}, 
 //   { product: "shirts", quantity: "2", price: 3000}, 
 // ]
 
@@ -46,7 +46,7 @@
 // cart.splice(1,2);
 // console.log(cart);
 
-// let str = "Kanwal";
+// const myName = "Kanwal";
 
 
 const modelForm = document.getElementById("modelForm");
